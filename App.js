@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   go() {
-    if (this.timer) {
+    if (this.timer && this.state.btnGo !== 'Continue') {
       this.setState({
         btnGo: 'Continue'
       })
